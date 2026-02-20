@@ -359,3 +359,108 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.rate-circle-text .big {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.2rem;
+  color: var(--accent2);
+  line-height: 1;
+}
+
+.rate-circle-text .small {
+  font-size: 0.6rem;
+  color: var(--text2);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.rate-sub {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--text2);
+  line-height: 1.6;
+}
+
+/* compact table */
+.ctable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.72rem;
+  margin-top: 12px;
+}
+
+.ctable th {
+  text-align: left;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0 8px 8px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ctable td {
+  padding: 7px 8px;
+  border-bottom: 1px solid rgba(30, 40, 64, 0.5);
+  color: var(--text2);
+  vertical-align: middle;
+}
+
+.ctable tr:last-child td {
+  border-bottom: none;
+}
+
+.ctable tr:hover td {
+  background: rgba(79, 142, 247, 0.04);
+}
+
+.mini-bar-wrap {
+  width: 50px;
+  height: 5px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.mini-bar {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.insight-box {
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-size: 0.76rem;
+  line-height: 1.7;
+  color: var(--text2);
+}
+
+.insight-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card,
+.lrow {
+  animation: fadeIn 0.5s ease both;
+}
